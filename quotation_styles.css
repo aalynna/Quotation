@@ -24,7 +24,7 @@
     margin: 0;
     page-break-after: always; /* Ensure content breaks to the next page */
   }
-  
+
   .a4-page:last-child {
     page-break-after: auto; /* Prevent an extra blank page at the end */
   }
@@ -61,12 +61,24 @@ body {
   font-weight: 50;
 }
 
-.sqwiggle img{
+.wave-icon {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: end;
+}
+
+.wave-icon img {
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  z-index: 2;
+}
+
+.sqwiggle img {
   width: 10px;
   height: 10%;
 }
-
-
 
 .company-info-container {
   display: flex;
@@ -109,20 +121,20 @@ body {
   border-radius: 99px;
 }
 
-.quotation-table h3{
-    font-size: 9px;
-    text-align: left;
-    margin-right: 10%;
-    font-style: normal;
+.quotation-table h3 {
+  font-size: 9px;
+  text-align: left;
+  margin-right: 10%;
+  font-style: normal;
 }
-.quotation-table p{
-    font-size: 8px;
-    text-align: left;
-    margin-right: 20%;
-    font-style: italic;
+.quotation-table p {
+  font-size: 8px;
+  text-align: left;
+  margin-right: 20%;
+  font-style: italic;
 }
-.quotation-table span{
-    margin: 10px;
+.quotation-table span {
+  margin: 10px;
 }
 
 .quotation-table table {
@@ -131,19 +143,16 @@ body {
   margin-bottom: 10mm;
   font-size: 8px;
   border: none;
-  
 }
 
 .quotation-table th {
-  background-color: #0065B2; /* Header color */
+  background-color: #0065b2; /* Header color */
   color: white; /* Text color for contrast */
   padding: 8px 10px; /* Adequate padding for spacing */
-  text-align: center; 
+  text-align: center;
   font-weight: lighter;
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Softer shadow */
   justify-content: space-around;
-  
-  
 }
 
 .quotation-table th:first-child {
@@ -159,7 +168,6 @@ body {
 .quotation-table td {
   padding: 12px 10px; /* Reduced padding for a more compact look */
   text-align: center;
-
 }
 
 /* .quotation-table tr{
@@ -167,7 +175,7 @@ body {
   border: white solid;
 } */
 
-.row-1{
+.row-1 {
   background-color: #fdfdfd;
   border: white solid;
 }
@@ -179,36 +187,36 @@ body {
   padding-right: 10px;
 }
 
-.total td , .discounted td, .grand-total td{
+.total td,
+.discounted td,
+.grand-total td {
   text-align: right;
 }
 
 .grand-total {
-    border-top: 0px solid #0065B2;
-    font-family: Poppins; /* Optional: Add a top border to the total row */
-  }
-  
-  .grand-total td {
-    font-weight: bold; /* Make the text bold */
-    padding: 8px 20px 8px 0px ; /* Add padding for spacing */
-  }
-  
-  .total-label {
-    text-align: left; /* Align "Grand Total" to the left */
-    border-radius: 25px 0 0 25px; /* Rounded corners on the left */
-    background-color: #0065B2; /* Background color for the label */
-    color: white; /* Text color for contrast */
-    
-  }
-  
-  .total-amount {
-    text-align: center; /* Align the total amount to the right */
-    border-radius: 0 25px 25px 0; /* Rounded corners on the right */
-    background-color: #0065B2; /* Background color for the amount */
-    color: white; /* Text color for contrast */
- 
-  }
-  
+  border-top: 0px solid #0065b2;
+  font-family: Poppins; /* Optional: Add a top border to the total row */
+}
+
+.grand-total td {
+  font-weight: bold; /* Make the text bold */
+  padding: 8px 20px 8px 0px; /* Add padding for spacing */
+}
+
+.total-label {
+  text-align: left; /* Align "Grand Total" to the left */
+  border-radius: 25px 0 0 25px; /* Rounded corners on the left */
+  background-color: #0065b2; /* Background color for the label */
+  color: white; /* Text color for contrast */
+}
+
+.total-amount {
+  text-align: center; /* Align the total amount to the right */
+  border-radius: 0 25px 25px 0; /* Rounded corners on the right */
+  background-color: #0065b2; /* Background color for the amount */
+  color: white; /* Text color for contrast */
+}
+
 .linebreak {
   width: 100%;
   display: flex;
@@ -219,9 +227,9 @@ body {
 
 .linebreak::before,
 .linebreak::after {
-  content: "";
+  content: '';
   flex: 1;
-  border-bottom: 1px dashed #ADADAD; /* Line color */
+  border-bottom: 1px dashed #adadad; /* Line color */
 }
 
 .linebreak::before {
@@ -234,7 +242,7 @@ body {
 
 .end-text {
   font-size: 8px;
-  color: #ADADAD;
+  color: #adadad;
 }
 
 .terms {
@@ -254,22 +262,21 @@ body {
   font-size: 8px;
   border-collapse: separate; /* Use 'separate' to allow rounding */
   border-spacing: 0; /* Remove space between borders */
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 8px 8px 0px 0px; /* Apply rounding to the whole table */
 }
 
 .terms th {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   color: black;
   font-weight: bold;
   padding: 4px 8px;
   text-align: left;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
 }
 
 .terms th:first-child {
   border-top-left-radius: 8px; /* Round top-left corner */
-
 }
 
 .terms th:last-child {
@@ -279,12 +286,12 @@ body {
 .terms td {
   padding: 8px;
   text-align: left;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
 }
 .terms td:first-child {
   padding: 8px;
   text-align: left;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   font-weight: bold;
 }
 
@@ -296,7 +303,6 @@ body {
 .terms td ul li {
   margin-bottom: 3px;
 }
-
 
 .footer p {
   margin-bottom: 5px;
@@ -330,82 +336,78 @@ body {
   color: blue; /* Applies the blue color only to the second paragraph (email) */
 }
 
-
-.signature-section-container{
+.signature-section-container {
   display: flex;
   flex-direction: row;
-  justify-content:left;
+  justify-content: left;
   margin-top: 10mm;
   gap: 80px;
   padding: 10px;
 }
 
-.mail-icon{
+.mail-icon {
   width: 600px;
   height: 40000px;
 }
-.signature-section{
-  padding: 0px 0px -10px 0px;  
+.signature-section {
+  padding: 0px 0px -10px 0px;
 }
 
-.signature-section-container h3{
+.signature-section-container h3 {
   margin-bottom: 1px;
 }
 
-.signature-space-conforme{
-  border: 1px solid #CCCCCC;
+.signature-space-conforme {
+  border: 1px solid #cccccc;
   padding: 10px 0px 10px 10px;
   width: 50%;
   margin-top: -12px;
   border-radius: 8px;
 }
 
-.signature-space-conforme p{
+.signature-space-conforme p {
   padding-top: 5px;
 }
 
-.customer-signature-line p{
+.customer-signature-line p {
   margin-top: 30px;
   width: 300px;
 }
 
-.customer-signature-line-input input{
+.customer-signature-line-input input {
   width: 250px;
 }
 
-
-.signature-input{
+.signature-input {
   margin-top: -50px;
   padding: 10px;
   margin-bottom: 4mm;
   height: 2px;
 }
 
-.conforme input{
+.conforme input {
   border: none;
-  border-bottom: 1px solid; 
+  border-bottom: 1px solid;
   background-color: white;
   padding: 1mm;
   height: 2mm;
 }
 
-
-#date{
-  width:50mm;
+#date {
+  width: 50mm;
 }
 
-
-.signature-section h3{ 
+.signature-section h3 {
   margin-bottom: 20px;
 }
 
-.signature-section p, .conforme p{ 
+.signature-section p,
+.conforme p {
   margin-top: -10px;
   margin-bottom: 10px;
 }
 
-
-.privacy{
+.privacy {
   text-align: center;
   color: blue;
   margin-top: 20px;
